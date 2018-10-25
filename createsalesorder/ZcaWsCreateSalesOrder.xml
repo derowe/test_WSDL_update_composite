@@ -117,4 +117,4 @@
          <TissueID>?</TissueID>\r
       </urn:ZcaWsCreateSalesOrder>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:soap:functions:mc-style:ZCA_WS_CREATE_SALES_ORDER:ZcaWsCreateSalesOrderRequest"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request><con:credentials/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:soap:functions:mc-style:ZCA_WS_CREATE_SALES_ORDER:ZcaWsCreateSalesOrderRequest"/><con:environmentSpec><con:entry environmentId="0ec60f3d-f6fe-41e8-9db6-2cea685cda07"><con:authProfile>EQ1</con:authProfile></con:entry></con:environmentSpec></con:call></con:operation>
