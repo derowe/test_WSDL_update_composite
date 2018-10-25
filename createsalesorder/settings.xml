@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="c824a59b-8a42-4eee-aa3c-602d0ba48d0c" wsaVersion="NONE" name="createsalesorder" type="wsdl" bindingName="{urn:sap-com:document:sap:soap:functions:mc-style}createsalesorder" soapVersion="1_1" anonymous="optional" definition="http://varteq1pas.arthrex.local:8000/sap/bc/srt/wsdl/flv_10002A1111D1/bndg_url/sap/bc/srt/rfc/sap/zca_ws_create_sales_order/100/createsalesorder/createsalesorder?sap-client=100&amp;saml2=disabled" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="c824a59b-8a42-4eee-aa3c-602d0ba48d0cfileName">createsalesorder</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://varteq1pas.arthrex.local:8000/sap/bc/srt/wsdl/flv_10002A1111D1/bndg_url/sap/bc/srt/rfc/sap/zca_ws_create_sales_order/100/createsalesorder/createsalesorder?sap-client=100&amp;saml2=disabled"><con:part><con:url>http://varteq1pas.arthrex.local:8000/sap/bc/srt/wsdl/flv_10002A1111D1/bndg_url/sap/bc/srt/rfc/sap/zca_ws_create_sales_order/100/createsalesorder/createsalesorder?sap-client=100&amp;saml2=disabled</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="urn:sap-com:document:sap:rfc:functions">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="BN__createsalesorder">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication/>
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15/>
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict/>
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication/>
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15/>
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict/>
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__ZCA_WS_CREATE_SALES_ORDER">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+          <sapcentraladmin:BusinessApplicationID>005056B92D851EE581A73C9201D5D89F</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__ZcaWsCreateSalesOrder">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char241">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="241"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr15.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="15"/>
+          <xsd:fractionDigits value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:n0="urn:sap-com:document:sap:rfc:functions">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions"/>
+      <xsd:complexType name="ZcaWsArthrexHeader">
+        <xsd:sequence>
+          <xsd:element name="CallingEntity" type="n0:string"/>
+          <xsd:element name="User" type="tns:ZcaWsArthrexUser"/>
+          <xsd:element name="MaxRowsReturned" type="n0:char8"/>
+          <xsd:element name="Language" type="n0:char2"/>
+          <xsd:element name="SalesArea" type="tns:ZcaWsSalesArea"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsArthrexUser">
+        <xsd:sequence>
+          <xsd:element name="Role" type="n0:string"/>
+          <xsd:element name="ID" type="n0:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsSalesArea">
+        <xsd:sequence>
+          <xsd:element name="SalesOrg" type="n0:char4"/>
+          <xsd:element name="DistrChannel" type="n0:char2"/>
+          <xsd:element name="Division" type="n0:char2"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsCreditCardDetails">
+        <xsd:sequence>
+          <xsd:element name="Type" type="n0:string"/>
+          <xsd:element name="Token" type="n0:string"/>
+          <xsd:element name="ExpirationDate" type="n0:string"/>
+          <xsd:element name="CvvResponseCode" type="n0:string"/>
+          <xsd:element name="AvsResponseCode" type="n0:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsSoLine">
+        <xsd:sequence>
+          <xsd:element name="Number" type="n0:string"/>
+          <xsd:element name="MaterialNumber" type="n0:string"/>
+          <xsd:element name="MaterialDescription" type="n0:string"/>
+          <xsd:element name="Quantity" type="n0:string"/>
+          <xsd:element name="UnitPrice" type="n0:string"/>
+          <xsd:element name="RequestedShippingMethod" type="n0:string"/>
+          <xsd:element name="BatchNumber" type="n0:string"/>
+          <xsd:element name="SerialNumber" type="n0:string"/>
+          <xsd:element name="Comment" type="n0:string"/>
+          <xsd:element name="CustomsCountryOfOrigin" type="n0:string"/>
+          <xsd:element name="CustomsSerialNumber" type="n0:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsAddr">
+        <xsd:sequence>
+          <xsd:element name="Name" type="n0:string"/>
+          <xsd:element name="Address1" type="n0:string"/>
+          <xsd:element name="Address2" type="n0:string"/>
+          <xsd:element name="City" type="n0:string"/>
+          <xsd:element name="Region" type="n0:string"/>
+          <xsd:element name="Country" type="n0:string"/>
+          <xsd:element name="PostalCode" type="n0:string"/>
+          <xsd:element name="PhoneNumber" type="n0:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsError2">
+        <xsd:sequence>
+          <xsd:element name="ErrorCode" type="n0:char8"/>
+          <xsd:element name="LineNumber" type="n0:char8"/>
+          <xsd:element name="ErrorDetails" type="tns:ZcaWsErrorDetails2"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsSoLines">
+        <xsd:sequence>
+          <xsd:element name="item" type="tns:ZcaWsSoLine" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsEmails">
+        <xsd:sequence>
+          <xsd:element name="item" type="n0:char241" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsErrors2">
+        <xsd:sequence>
+          <xsd:element name="item" type="tns:ZcaWsError2" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZcaWsErrorDetails2">
+        <xsd:sequence>
+          <xsd:element name="item" type="n0:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZcaWsCreateSalesOrder">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ArthrexHeader" type="tns:ZcaWsArthrexHeader" minOccurs="0"/>
+            <xsd:element name="AttentionTo" type="n0:string" minOccurs="0"/>
+            <xsd:element name="BillingContactEmailAddress" type="n0:string" minOccurs="0"/>
+            <xsd:element name="BillingContactName" type="n0:string" minOccurs="0"/>
+            <xsd:element name="BillingContactPhoneNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="CosNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="CreditCardDetails" type="tns:ZcaWsCreditCardDetails" minOccurs="0"/>
+            <xsd:element name="DateOfSurgery" type="n0:string" minOccurs="0"/>
+            <xsd:element name="DropToCustomerNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="ExternalOrderId" type="n0:string" minOccurs="0"/>
+            <xsd:element name="FreightCharge" type="n0:string" minOccurs="0"/>
+            <xsd:element name="Incoterm1" type="n0:string" minOccurs="0"/>
+            <xsd:element name="InternalComments" type="n0:string" minOccurs="0"/>
+            <xsd:element name="LineItems" type="tns:ZcaWsSoLines" minOccurs="0"/>
+            <xsd:element name="OrderContactEmailAddress" type="tns:ZcaWsEmails" minOccurs="0"/>
+            <xsd:element name="OrderContactName" type="n0:string" minOccurs="0"/>
+            <xsd:element name="OrderContactPhoneNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="OrderCurrency" type="n0:string" minOccurs="0"/>
+            <xsd:element name="OrderReason" type="n0:string" minOccurs="0"/>
+            <xsd:element name="OrderReferenceNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="PackingListComments" type="n0:string" minOccurs="0"/>
+            <xsd:element name="PaymentTerms" type="n0:string" minOccurs="0"/>
+            <xsd:element name="PurchaseOrderNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="RequestedShippingMethod" type="n0:string" minOccurs="0"/>
+            <xsd:element name="RequestedShippingPoint" type="n0:string" minOccurs="0"/>
+            <xsd:element name="SalesOrderType" type="n0:string" minOccurs="0"/>
+            <xsd:element name="ShipTo" type="tns:ZcaWsAddr" minOccurs="0"/>
+            <xsd:element name="ShipToCustomerNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="SoldToCustomerNumber" type="n0:string" minOccurs="0"/>
+            <xsd:element name="Surgeon" type="n0:string" minOccurs="0"/>
+            <xsd:element name="SurgeryCaseId" type="n0:string" minOccurs="0"/>
+            <xsd:element name="ThirdPartyFreightAccount" type="n0:string" minOccurs="0"/>
+            <xsd:element name="TissueID" type="n0:string" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZcaWsCreateSalesOrderResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Errors" type="tns:ZcaWsErrors2"/>
+            <xsd:element name="SalesOrderNumber" type="n0:char10"/>
+            <xsd:element name="TotalAmount" type="n0:curr15.2"/>
+            <xsd:element name="WasSuccessful" type="n0:char1"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZcaWsCreateSalesOrder">
+    <wsdl:part name="parameters" element="tns:ZcaWsCreateSalesOrder"/>
+  </wsdl:message>
+  <wsdl:message name="ZcaWsCreateSalesOrderResponse">
+    <wsdl:part name="parameter" element="tns:ZcaWsCreateSalesOrderResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="zca_ws_create_sales_order">
+    <wsdl:operation name="ZcaWsCreateSalesOrder">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__ZcaWsCreateSalesOrder"/>
+      </wsp:Policy>
+      <wsdl:input message="tns:ZcaWsCreateSalesOrder"/>
+      <wsdl:output message="tns:ZcaWsCreateSalesOrderResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="createsalesorder" type="tns:zca_ws_create_sales_order">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__createsalesorder"/>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZcaWsCreateSalesOrder">
+      <soap:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZCA_WS_CREATE_SALES_ORDER:ZcaWsCreateSalesOrderRequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="createsalesorder">
+    <wsdl:port name="createsalesorder" binding="tns:createsalesorder">
+      <soap:address location="http://varteq1pas.arthrex.local:8000/sap/bc/srt/rfc/sap/zca_ws_create_sales_order/100/createsalesorder/createsalesorder"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://varteq1pas.arthrex.local:8000/sap/bc/srt/rfc/sap/zca_ws_create_sales_order/100/createsalesorder/createsalesorder</con:endpoint></con:endpoints></con:interface>

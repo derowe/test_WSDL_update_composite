@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="dbfc7cd7-4441-4f2d-8f07-3438dec2f4d7" name="createsalesorder TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="dbfc7cd7-4441-4f2d-8f07-3438dec2f4d7fileName">createsalesorder-TestSuite</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
