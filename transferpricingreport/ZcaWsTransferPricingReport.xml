@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="91474e00-aeb7-4350-8696-cae3c542d7f7" isOneWay="false" action="urn:sap-com:document:sap:soap:functions:mc-style:zca_ws_transfer_pricing_report:ZcaWsTransferPricingReportRequest" name="ZcaWsTransferPricingReport" bindingOperationName="ZcaWsTransferPricingReport" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="91474e00-aeb7-4350-8696-cae3c542d7f7fileName">ZcaWsTransferPricingReport</con:setting></con:settings><con:call id="b506537d-c768-4187-9e43-36b27dc1be18" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:ZcaWsTransferPricingReport>\r
+         <ArthrexHeader>\r
+            <CallingEntity>?</CallingEntity>\r
+            <User>\r
+               <Role>?</Role>\r
+               <ID>?</ID>\r
+            </User>\r
+            <MaxRowsReturned>?</MaxRowsReturned>\r
+            <Language>?</Language>\r
+            <SalesArea>\r
+               <SalesOrg>?</SalesOrg>\r
+               <DistrChannel>?</DistrChannel>\r
+               <Division>?</Division>\r
+            </SalesArea>\r
+         </ArthrexHeader>\r
+         <!--Optional:-->\r
+         <MaterialNumber>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </MaterialNumber>\r
+         <!--Optional:-->\r
+         <PriceValidFromDate>?</PriceValidFromDate>\r
+         <!--Optional:-->\r
+         <SoldToCustomerNumber>?</SoldToCustomerNumber>\r
+      </urn:ZcaWsTransferPricingReport>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:soap:functions:mc-style:zca_ws_transfer_pricing_report:ZcaWsTransferPricingReportRequest"/></con:call></con:operation>
