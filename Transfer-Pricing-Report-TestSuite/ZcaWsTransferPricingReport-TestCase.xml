@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="5ff6fad8-e0ae-4ac0-b4c8-8b9d7693603a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ZcaWsTransferPricingReport TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5ff6fad8-e0ae-4ac0-b4c8-8b9d7693603afileName">ZcaWsTransferPricingReport-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="03bddd6b-19be-4717-8892-d49a68b0685e" name="ZcaWsTransferPricingReport"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>transferpricingreport</con:interface><con:operation>ZcaWsTransferPricingReport</con:operation><con:request name="ZcaWsTransferPricingReport" id="2f7ea6c9-1ab1-4895-be3a-c0fdc103510b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://varteq1pas.arthrex.local:8000/sap/bc/srt/rfc/sap/zca_ws_transfer_pricing_report/100/transferpricingreport/transferpricingreport</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZcaWsTransferPricingReport>
+         <ArthrexHeader>
+            <CallingEntity>SQA</CallingEntity>
+            <User>
+               <Role>InternalUser</Role>
+               <ID/>
+            </User>
+            <MaxRowsReturned>999</MaxRowsReturned>
+            <Language>en</Language>
+            <SalesArea>
+               <SalesOrg>US01</SalesOrg>
+               <DistrChannel>US</DistrChannel>
+               <Division>Us</Division>
+            </SalesArea>
+         </ArthrexHeader>
+         <!--Optional:-->
+         <MaterialNumber>
+            <!--Zero or more repetitions:-->
+            <item>AR-13323G </item>
+         </MaterialNumber><PriceValidFromDate>2015-12-31</PriceValidFromDate><SoldToCustomerNumber>1000011713</SoldToCustomerNumber>
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         
+      </urn:ZcaWsTransferPricingReport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="urn:sap-com:document:sap:soap:functions:mc-style:zca_ws_transfer_pricing_report:ZcaWsTransferPricingReportRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="0ec60f3d-f6fe-41e8-9db6-2cea685cda07"><con:authProfile>EQ1</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

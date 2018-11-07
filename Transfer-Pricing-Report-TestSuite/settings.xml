@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="c19b9785-a5bb-4104-9561-1068edc9d084" name="Transfer Pricing Report TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c19b9785-a5bb-4104-9561-1068edc9d084fileName">Transfer-Pricing-Report-TestSuite</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

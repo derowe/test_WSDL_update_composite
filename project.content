@@ -1,3 +1,4 @@
 createsalesorder\ZcaWsCreateSalesOrder.xml
 transferpricingreport\ZcaWsTransferPricingReport.xml
 createsalesorder-TestSuite\ZcaWsCreateSalesOrder-TestCase.xml
+Transfer-Pricing-Report-TestSuite\ZcaWsTransferPricingReport-TestCase.xml
